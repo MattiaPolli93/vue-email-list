@@ -8,18 +8,23 @@
     <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
     <!-- Axios API -->
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <!-- Style -->
+    <link rel="stylesheet" href="css/style.css">
     <title>Vue Email List</title>
 </head>
 <body>
-    <div id="app">
-        <h1>Email List</h1>
-        <ul>
-            <li v-for="(email) in list">
-                {{email}}
-            </li>
-        </ul>
+    <div class="wrapper">
+        <!-- Main div -->
+        <div id="app">
+            <h1>Email List 📧</h1>
+            <ul>
+                <li v-for="(email) in list">
+                    {{email}}
+                </li>
+            </ul>
+        </div>
     </div>
-
+        
     <!-- Main JS file -->
     <script src="js/script.js"></script>
 </body>
